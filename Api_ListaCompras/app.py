@@ -4,7 +4,7 @@ import sqlite3
 
 app = Flask(__name__)
 CORS(app)
-
+#funcao para criar as atabelas no banco de daos no SQLITE3
 def init_db():
     # Cria tabelas se elas ainda não existirem
     with sqlite3.connect("shopping_list.db") as conn:
